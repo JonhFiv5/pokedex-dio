@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fonte Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Arquivos CSS locais -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/pokedex.css">
+</head>
+
+<body>
+  <section class="content">
+    <h1>Pokedex</h1>
+    <select name="pokemon-generation" id="pokemon-generation">
+      <option value="1">1° Generation</option>
+      <option value="2">2° Generation</option>
+      <option value="3">3° Generation</option>
+      <option value="4">4° Generation</option>
+      <option value="5">5° Generation</option>
+      <option value="6">6° Generation</option>
+      <option value="7">7° Generation</option>
+      <option value="8">8° Generation</option>
+      <option value="9">9° Generation</option>
+    </select>
+
+    <ol class="pokemon-list" id="pokemon-list">
+      <!-- Listagem de pokemon -->
+    </ol>
+
+    <div id="details-modal">
+      <button id="close-modal">X</button>
+      <div id="modal-content"></div>
+    </div>
+    
+    <div class="pagination">
+      <button type="button" id="load-more">Load more</button>
+    </div>
+
+  </section>
+
+  <!-- Arquivos JS locais -->
+  <script src="assets/js/pokemon-model.js"></script>
+  <script src="assets/js/poke-api.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
